@@ -2,19 +2,22 @@
 let x = document.getElementById(`image`);
 
 function upDate(previewPic){
+	console.log("Mouse on the image");
+	console.log("Alt: "+ previewPic.alt);
+	console.log("Src: "+ previewPic.src);
  
-  x.style.backgroundImage = `url(${previewPic.src})`;
+	x.style.backgroundImage = `url(${previewPic.src})`;
   
-  x.style.backgroundColor = "pink";
+	x.style.backgroundColor = "pink";
   
-  x.innerHTML = previewPic.alt;
+	x.innerHTML = previewPic.alt;
 	}
 
-	function unDo(){
+function unDo(){
   
-   x.style.backgroundImage = ""; 
+	x.style.backgroundImage = ""; 
     
-   x.style.backgroundColor = "";
+	x.style.backgroundColor = "";
     
-   x.innerHTML = "Hover over an image below to display here.";	
+	x.innerHTML = "Hover over an image below to display here.";	
 	}
